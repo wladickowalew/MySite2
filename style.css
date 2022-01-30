@@ -35,3 +35,8 @@ body{
     font-size: 20px;
     line-height: initial;
 }
+
+.banner{
+    background-color: #696969;
+    min-height: 650px;
+}
