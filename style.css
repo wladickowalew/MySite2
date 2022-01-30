@@ -50,7 +50,6 @@ body{
     width: 100%;
     background-size: cover;
     text-align: center;
-    height: 100%;
 }
 
 .banner h2{
@@ -59,4 +58,21 @@ body{
 
 .banner p{
     font-size: 2rem;
+}
+
+.scrolldown{
+    position: absolute;
+    left: calc(50% - 52px);
+    margin-top: 15%;
+}
+
+.scrolldown img{
+    margin-bottom: 20px;
+}
+
+.scrolldown p{
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
 }
