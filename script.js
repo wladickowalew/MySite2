@@ -3,3 +3,9 @@ $(document).ready(function(){
         pager: false,
     })
 })
+
+$(document).ready(function(){
+    $('.bxslider_team').bxSlider({
+        controls: false,
+    })
+})
