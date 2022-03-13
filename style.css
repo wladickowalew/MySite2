@@ -289,3 +289,20 @@ h4{
     width: 100%;
     left: -34%;
 }
+
+.partners{
+    background: url(images/cbanner.jpg) no-repeat center center;
+    background-size: cover;
+    color: #f6f6f6;
+    padding: 30px 0;
+}
+
+.slides{
+    display: flex;
+    align-items: center;
+}
+
+.innerwidth{
+    width: 70%;
+    margin: 0 auto;
+}
