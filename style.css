@@ -386,3 +386,12 @@ h4{
     font-family: 'Linearicons-Free';
     content: "\e874";
 }
+
+footer p{
+    font-size: 20px;
+}
+
+footer h4{
+    padding: 20px;
+    font-family: 'bignoodletitling';
+}
