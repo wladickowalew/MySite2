@@ -19,3 +19,9 @@ $(document).ready(function(){
         touch: true
     });
 });
+
+$(document).ready(function(){
+    $('.accordion').accordion({
+        defaultOpen: ''
+    });
+});
