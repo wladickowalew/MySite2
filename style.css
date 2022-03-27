@@ -422,3 +422,49 @@ footer h4{
     color: #3d3d3d;
     border-bottom: 1px solid #e84c3d;
 }
+
+#portfoliolist .portfolio{
+    width: 20%;
+    float: left;
+    overflow: hidden;
+    display: none;
+}
+
+.portfolio-wrapper{
+    overflow: hidden;
+    position: relative !important;
+    cursor: pointer;
+}
+
+.portfolio img{
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.imgDisc2{
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    padding-top: 120px;
+    cursor: pointer;
+    transition: 0.5s;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.imgDisc2 h1{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.portfolio-wrapper:hover .imgDisc2{
+    visibility: visible;
+    opacity: 1;
+}
