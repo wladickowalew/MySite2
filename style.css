@@ -13,7 +13,7 @@ h3{
 
 .topheader{
     z-index: 99999;
-    position: relative;
+    position: fixed;
     width: 100%;
     background: white;
     height: 140px;
@@ -467,4 +467,12 @@ footer h4{
 .portfolio-wrapper:hover .imgDisc2{
     visibility: visible;
     opacity: 1;
+}
+
+.topheader.is-fixed{
+    height: 80px;
+}
+
+.topheader.is-fixed a{
+    margin-top: 0px;
 }
