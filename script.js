@@ -56,6 +56,7 @@ $('.primary-nav').on("click", "a", function(event){
     $('body, html').animate({scrollTop: top}, 1000);
 });
 
+
 let headerHeight = $('.topheader').height();
 $(window).on('scroll', { previousTop: 0 },
     function(){
@@ -72,3 +73,26 @@ $(window).on('scroll', { previousTop: 0 },
         this.previousTop = currentTop;  
     }
 );
+
+$('#send_form .submit').on("click", function(event){
+    if ($('#name').val() != '' && $('#email').val() != ''){
+        fetch('send.php', {
+            method: 'POST',
+            headers:{
+                'Content-Type': "application/x-www-form-urlencoded"
+            },
+            body: $("#send_form").serialize()
+        }).then((response) => response.json()).then((data) =>{
+            if(data.status === "ok"){
+                $("#send_form").addClass("send_success");
+                setTimeout(() => $("#send_form").removeClass("send_success"), 4000);
+            }
+            if(data.status === "error"){
+                $("#send_form").addClass("send_fail");
+                setTimeout(() => $("#send_form").removeClass("send_fail"), 4000);
+            }
+        });
+    }else{
+        alert("Заполните обязательные поля");
+    }
+});
