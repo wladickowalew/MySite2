@@ -12,7 +12,7 @@ h3{
 }
 
 .topheader{
-    z-index: 99999;
+    z-index: 9000;
     position: fixed;
     width: 100%;
     background: white;
@@ -491,4 +491,65 @@ footer h4{
 
 #send_form{
     transition: all 1s ease-out;
+}
+
+.preload{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    background-color: #000;
+}
+
+#spinSquares{
+    position: relative;
+    width: 234px;
+    height: 28px;
+    margin: auto;
+    top: 50%;
+}
+
+.spinSquar{
+    position: absolute;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background-color: #fff;
+    animation-name: spinningSquares;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+#spinSquar_1{
+    left: 0px;
+}
+
+#spinSquar_2{
+    left: 28px;
+}
+
+#spinSquar_3{
+    left: 56px;
+}
+
+#spinSquar_4{
+    left: 84px;
+}
+
+#spinSquar_5{
+    left: 112px;
+}
+
+#spinSquar_6{
+    left: 140px;
+}
+
+#spinSquar_7{
+    left: 168px;
+}
+
+#spinSquar_8{
+    left: 196px;
 }

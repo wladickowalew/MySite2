@@ -10,7 +10,7 @@
                     <br>e-mail: <b>".$email."</b>
                     <br>пользователь оставил комментарий ".$msg."
                     <br>Поздравляю с новой заявкой!";
-    $my_email = "wikowol988@yeafam.com";
+    $my_email = "ikowlad@gmail.com";
     if(mail($my_email, "Новый запрос на создание сайта", $html_text,
           "From: cccr-early.ru\r\n". "Content-type: text/html\r\n")){
         echo '{"status": "ok"}';
